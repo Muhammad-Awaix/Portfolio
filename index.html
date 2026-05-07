@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Awais | Data Analyst & AI Developer</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ─── CURSOR ─── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── NOISE OVERLAY ─── -->
+  <div class="noise"></div>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Awais<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero-name reveal-up delay-1">Muhammad<br /><span class="name-highlight">Awais</span></h1>
+        <div class="hero-role reveal-up delay-2">
+          <span class="role-prefix">I build </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio reveal-up delay-3">
+          Data Analyst &amp; AI Developer crafting intelligent solutions —<br />
+          from insightful dashboards to production-ready LLM applications.
+        </p>
+        <div class="hero-actions reveal-up delay-4">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-socials reveal-up delay-5">
+          <a href="https://github.com/Muhammad-Awaix" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:awais@email.com" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal-right delay-2">
+        <div class="photo-frame">
+          <div class="photo-ring ring-1"></div>
+          <div class="photo-ring ring-2"></div>
+          <div class="photo-dots"></div>
+          <img src="assets/awais.png" alt="Muhammad Awais" class="hero-photo" />
+          <div class="photo-badge">
+            <span class="badge-dot"></span>
+            Available for hire
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">About</div>
+      <h2 class="section-title reveal-up delay-1">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left delay-2">
+          <p class="about-lead">
+            BS Software Engineering graduate (CGPA 3.57) from University of Sahiwal,
+            based in Punjab, Pakistan — turning raw data into actionable intelligence
+            and building AI-powered applications that actually ship.
+          </p>
+          <p class="about-body">
+            Co-founder of <a href="https://dev66.pk" target="_blank" class="inline-link">Dev66.pk</a>, 
+            an online data analytics &amp; data science education platform for Pakistani students. 
+            I specialize in the full stack of modern data work — from SQL queries and Power BI 
+            dashboards to LangChain agents and RAG pipelines.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">AI Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3.57</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details reveal-right delay-3">
+          <div class="detail-item">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <span class="detail-label">Education</span>
+              <span class="detail-value">BS Software Engineering, University of Sahiwal</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Chichawatni, Punjab, Pakistan</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-briefcase"></i>
+            <div>
+              <span class="detail-label">Role</span>
+              <span class="detail-value">Data Analyst &amp; AI Developer</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-building"></i>
+            <div>
+              <span class="detail-label">Company</span>
+              <span class="detail-value">Co-founder @ Dev66.pk</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-20">Hire Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">Tech Stack</div>
+      <h2 class="section-title reveal-up delay-1">Tools I Work With</h2>
+      <div class="skills-categories">
+
+        <div class="skill-group reveal-up delay-2">
+          <h3 class="skill-group-title"><i class="fas fa-chart-bar"></i> Data Analytics</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-3">
+          <h3 class="skill-group-title"><i class="fas fa-robot"></i> AI / LLM</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">LangChain</span>
+            <span class="tag tag-accent">LangGraph</span>
+            <span class="tag tag-accent">Groq API</span>
+            <span class="tag tag-accent">OpenAI</span>
+            <span class="tag tag-accent">FAISS</span>
+            <span class="tag tag-accent">RAG</span>
+            <span class="tag tag-accent">Pydantic</span>
+            <span class="tag tag-accent">Streamlit</span>
+            <span class="tag tag-accent">FastAPI</span>
+            <span class="tag tag-accent">Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-4">
+          <h3 class="skill-group-title"><i class="fas fa-code"></i> Dev &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag tag-muted">Git</span>
+            <span class="tag tag-muted">GitHub</span>
+            <span class="tag tag-muted">VS Code</span>
+            <span class="tag tag-muted">pgAdmin</span>
+            <span class="tag tag-muted">DB Browser</span>
+            <span class="tag tag-muted">Make.com</span>
+            <span class="tag tag-muted">REST APIs</span>
+            <span class="tag tag-muted">Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">Portfolio</div>
+      <h2 class="section-title reveal-up delay-1">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up delay-2" data-tilt>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Muhammad-Awaix" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">CV Job Matcher</h3>
+          <p class="project-desc">AI-powered resume analyzer that matches CVs against job descriptions using LangChain + Groq. Deployed on Streamlit Cloud with structured output parsing.</p>
+          <div class="project-tags">
+            <span>LangChain</span><span>Groq</span><span>Streamlit</span><span>Pydantic</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-3" data-tilt>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Muhammad-Awaix/ai-agent-langgraph" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">LangGraph ReAct Agent</h3>
+          <p class="project-desc">Production-ready AI agent built with LangGraph's ReAct architecture. FastAPI backend + glassmorphism Flask frontend. Handles multi-step reasoning tasks.</p>
+          <div class="project-tags">
+            <span>LangGraph</span><span>FastAPI</span><span>Flask</span><span>ReAct</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-4" data-tilt>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-newspaper"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Muhammad-Awaix" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">AI News Digest Dashboard</h3>
+          <p class="project-desc">Automated news aggregation and summarization pipeline using feedparser + Groq API. Delivers categorized AI/tech news digest with real-time updates.</p>
+          <div class="project-tags">
+            <span>feedparser</span><span>Groq</span><span>Python</span><span>Dashboard</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-2" data-tilt>
+          <div class="project-header">
+            <div class="project-icon"><i class="fab fa-youtube"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Muhammad-Awaix" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">YouTube RAG Assistant</h3>
+          <p class="project-desc">RAG pipeline that ingests YouTube transcripts and answers questions about video content. Built with FastAPI, LangChain, FAISS vector store, and Groq LLM.</p>
+          <div class="project-tags">
+            <span>RAG</span><span>FAISS</span><span>LangChain</span><span>FastAPI</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-3" data-tilt>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-book-open"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Muhammad-Awaix" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Book Recommendation System</h3>
+          <p class="project-desc">Semantic book recommendation engine leveraging vector embeddings and LLM-powered explanations. Finds books based on mood, themes, and reading preferences.</p>
+          <div class="project-tags">
+            <span>Embeddings</span><span>Vector DB</span><span>LLM</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card-cta reveal-up delay-4">
+          <div class="cta-content">
+            <i class="fab fa-github cta-icon"></i>
+            <h3>More on GitHub</h3>
+            <p>Check out all my open source projects, experiments, and contributions.</p>
+            <a href="https://github.com/Muhammad-Awaix" target="_blank" class="btn btn-ghost">
+              Visit GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="section-label reveal-up">Credentials</div>
+      <h2 class="section-title reveal-up delay-1">Certifications</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal-up delay-2">
+          <div class="cert-logo cert-ibm">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="cert-info">
+            <h3>IBM Data Science Professional</h3>
+            <p>IBM · Coursera</p>
+            <div class="cert-badge">Professional Certificate</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-3">
+          <div class="cert-logo cert-google">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Google Advanced Data Analytics</h3>
+            <p>Google · Coursera</p>
+            <div class="cert-badge">Professional Certificate</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-4">
+          <div class="cert-logo cert-gfg">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Complete Data Science &amp; ML</h3>
+            <p>GeeksforGeeks</p>
+            <div class="cert-badge">Professional Certificate</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-label reveal-up">What I Offer</div>
+      <h2 class="section-title reveal-up delay-1">Services</h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-2">
+          <div class="service-number">01</div>
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Data Analytics</h3>
+          <p>End-to-end data analysis — cleaning, EDA, visualization, and dashboards with Python, SQL, and Power BI. Turn messy data into clear decisions.</p>
+          <ul class="service-list">
+            <li>Python (Pandas, Matplotlib)</li>
+            <li>SQL Querying &amp; Optimization</li>
+            <li>Power BI Dashboards</li>
+            <li>Excel Advanced Analysis</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="service-number">02</div>
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Application Development</h3>
+          <p>Production-ready AI apps using LangChain, LangGraph, and modern LLM APIs. From chatbots to agentic workflows — I build and deploy.</p>
+          <ul class="service-list">
+            <li>LLM App Development</li>
+            <li>RAG Pipeline Building</li>
+            <li>AI Agents (ReAct/LangGraph)</li>
+            <li>Streamlit &amp; FastAPI Deployment</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up delay-4">
+          <div class="service-number">03</div>
+          <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Data Science Consulting &amp; Teaching</h3>
+          <p>Co-founder of Dev66.pk. I help beginners in Pakistan learn data skills through structured, affordable, Urdu+English instruction.</p>
+          <ul class="service-list">
+            <li>1-on-1 Mentorship</li>
+            <li>Data Analytics Roadmaps</li>
+            <li>Course Design</li>
+            <li>Career Guidance</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BLOG ─── -->
+  <section class="blog section" id="blog">
+    <div class="container">
+      <div class="section-label reveal-up">Thoughts</div>
+      <h2 class="section-title reveal-up delay-1">Latest Articles</h2>
+      <div class="blog-grid">
+
+        <article class="blog-card reveal-up delay-2">
+          <div class="blog-tag">Data Analytics</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> May 2025</div>
+          <h3 class="blog-title">Why SQL is Still the Most Valuable Skill for Data Analysts in Pakistan</h3>
+          <p class="blog-excerpt">Everyone's learning Python. But the dirty secret of the local job market is that SQL proficiency still separates entry-level from job-ready. Here's the truth.</p>
+          <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="blog-card reveal-up delay-3">
+          <div class="blog-tag">AI / LLM</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> April 2025</div>
+          <h3 class="blog-title">Building My First LangGraph Agent: What I Learned Shipping to Production</h3>
+          <p class="blog-excerpt">From concept to deployed app — the real technical challenges, debugging nightmares, and lessons learned building a ReAct agent with FastAPI.</p>
+          <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="blog-card reveal-up delay-4">
+          <div class="blog-tag">Career</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> March 2025</div>
+          <h3 class="blog-title">Data Analyst vs Data Engineer in Pakistan: Which Road Should You Take in 2025?</h3>
+          <p class="blog-excerpt">The DA market is getting saturated. Junior DE roles are less crowded. Here's an honest breakdown of both paths with local market realities.</p>
+          <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="blog-card reveal-up delay-2">
+          <div class="blog-tag">Personal Growth</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> February 2025</div>
+          <h3 class="blog-title">How I Built Dev66 While Job Hunting: Running a Startup on Zero Budget</h3>
+          <p class="blog-excerpt">The real story behind co-founding an EdTech platform with no funding, no co-working space, and nothing but a laptop and stubbornness.</p>
+          <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="blog-card reveal-up delay-3">
+          <div class="blog-tag">Tutorial</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> January 2025</div>
+          <h3 class="blog-title">RAG Explained Simply: Build a Q&A App Over Any Document in 30 Minutes</h3>
+          <p class="blog-excerpt">No PhD required. A step-by-step walkthrough of building a Retrieval-Augmented Generation app using LangChain, FAISS, and Groq API.</p>
+          <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="blog-card blog-card-cta reveal-up delay-4">
+          <div class="cta-content">
+            <i class="fas fa-pen-nib cta-icon"></i>
+            <h3>More Articles Coming</h3>
+            <p>Subscribe to get notified when new posts drop — tech, career, and life in the Pakistani dev scene.</p>
+            <a href="#contact" class="btn btn-ghost">Get Notified <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">Get in Touch</div>
+      <h2 class="section-title reveal-up delay-1">Let's Work Together</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left delay-2">
+          <p class="contact-lead">
+            Open to freelance projects, full-time Data Analytics / AI Developer roles,
+            and collaboration opportunities. Let's build something useful.
+          </p>
+          <div class="contact-items">
+            <a href="mailto:awais@dev66.pk" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">awais@dev66.pk</span>
+              </div>
+            </a>
+            <a href="https://github.com/Muhammad-Awaix" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">Muhammad-Awaix</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">Muhammad Awais</span>
+              </div>
+            </a>
+            <a href="https://dev66.pk" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <span class="contact-item-label">Platform</span>
+                <span class="contact-item-value">dev66.pk</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right delay-3" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project / Opportunity / Hello" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Awais<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Muhammad Awais · Built with purpose, not templates.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/Muhammad-Awaix" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:awais@dev66.pk" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
