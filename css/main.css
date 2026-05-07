@@ -332,7 +332,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 120px;
+  gap: 180px;
+  flex-wrap: nowrap;
 }
 
 .hero-text { flex: 1; max-width: 600px; }
@@ -432,11 +433,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .photo-frame::before {
   content: '';
   position: absolute;
-  inset: 20px;
-  background: rgba(108, 99, 255, 0.15);
+  inset: 15px;
+  background: rgba(108, 99, 255, 0.25);
   border-radius: var(--radius-xl);
-  filter: blur(40px);
+  filter: blur(50px);
   z-index: 1;
+  box-shadow: 0 0 80px rgba(108, 99, 255, 0.3);
 }
 
 .photo-ring {
