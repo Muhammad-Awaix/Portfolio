@@ -348,7 +348,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero-name {
   font-family: var(--font-display);
-  font-size: clamp(48px, 7vw, 80px);
+  font-size: clamp(30px, 7vw, 80px);
   font-weight: 800;
   line-height: 1.0;
   color: var(--text-1);
@@ -1304,18 +1304,44 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
+  .hero {
+    min-height: auto;
+    padding: 24px 0 40px;
+  }
+
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 40px 20px;
-    gap: 40px;
+    padding: 30px 16px 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-name {
+    font-size: clamp(36px, 10vw, 52px);
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  .hero-role {
+    font-size: clamp(15px, 3.2vw, 18px);
+  }
+
+  .hero-bio {
+    max-width: 100%;
+    margin: 0 auto 24px;
   }
 
   .hero-visual { display: flex; justify-content: center; }
-  .photo-frame { width: 240px; height: 290px; }
-  .hero-photo { width: 210px; height: 270px; }
-  .ring-1 { width: 270px; height: 270px; }
-  .ring-2 { width: 210px; height: 210px; }
+  .photo-frame { width: 220px; height: 280px; }
+  .hero-photo { width: 200px; height: 250px; }
+  .ring-1 { width: 250px; height: 250px; }
+  .ring-2 { width: 200px; height: 200px; }
   .photo-badge { left: -10px; bottom: 10px; }
 
   .hero-actions, .hero-socials { justify-content: center; }
